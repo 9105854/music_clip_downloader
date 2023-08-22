@@ -5,7 +5,7 @@ It also fades in and out for 1 second.
 ## Usage
 Download the git repository using your method of choice. Simplest is to just download the zip file from the GitHub page. 
 Then, populate the `song.txt` file in the format shown below. 
-`https://www.youtube.com/watch?v=dQw4w9WgXcQ 120`
+```https://www.youtube.com/watch?v=dQw4w9WgXcQ 120```
 The first part is the youtube link, followed by a space, then the start time to cut **in seconds**. 
 Each song needs to be on a new line. You can check the current `songs.txt` file for an example.
 Then, run the program using python e.g.
