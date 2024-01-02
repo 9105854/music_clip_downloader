@@ -1,0 +1,20 @@
+<div
+  hx-trigger="done"
+  hx-get="/job"
+  hx-swap="outerHTML"
+  hx-target="this"
+  hx-headers='{"Job-ID": "{{ job_id }}"}'
+>
+  <h3 role="status" id="pblabel" tabindex="-1" autofocus>Downloading Songs</h3>
+
+  <div
+    hx-get="/job/progress"
+    hx-trigger="every 2000ms"
+    hx-target="this"
+    hx-swap="innerHTML"
+    hx-headers='{"Job-ID": "{{ job_id }}"}'
+  >
+    <label for="file">Job Progress</label>
+    <progress id="file" value="0" max="100">0</progress>
+  </div>
+</div>

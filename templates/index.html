@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://unpkg.com/htmx.org@1.9.10"></script>
+    <title>Bell Downloader</title>
+  </head>
+  <body hx-boost="true">
+    <form
+      hx-post="/upload"
+      hx-encoding="multipart/form-data"
+      hx-target="this"
+      hx-swap="outerHTML"
+    >
+      <label for="file">Upload text file here please: </label
+      ><input type="file" name="file" id="file" />
+      <button type="submit">Upload</button>
+    </form>
+  </body>
+</html>
